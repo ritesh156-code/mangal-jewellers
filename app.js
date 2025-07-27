@@ -1,9 +1,9 @@
 // Application data
 const appData = {
   "brand": {
-    "name": "SWARNA JEWELRY",
+    "name": "MANGAL JEWELERS",
     "tagline": "Traditional Craftsmanship, Timeless Beauty",
-    "description": "Since 1975, Swarna Jewelry has been a trusted name in traditional Indian jewelry. Our master craftsmen create exquisite pieces using time-honored techniques, bringing you the finest collection of gold, silver, and precious stone jewelry that celebrates India's rich heritage.",
+    "description": "Since 1975, Mangal Jewelers has been a trusted name in traditional Indian jewelry. Our master craftsmen create exquisite pieces using time-honored techniques, bringing you the finest collection of gold, silver, and precious stone jewelry that celebrates India's rich heritage.",
     "heritage": "50 years of excellence",
     "locations": "12 stores across India"
   },
@@ -155,7 +155,7 @@ const appData = {
     {
       "name": "Priya Sharma",
       "rating": 5,
-      "comment": "Absolutely beautiful craftsmanship! I bought my bridal jewelry from Swarna and it was perfect for my wedding. The gold quality is excellent.",
+      "comment": "Absolutely beautiful craftsmanship! I bought my bridal jewelry from Mangal Jewelers and it was perfect for my wedding. The gold quality is excellent.",
       "location": "Mumbai, Maharashtra",
       "verified": true
     },
@@ -169,7 +169,7 @@ const appData = {
     {
       "name": "Anjali Patel",
       "rating": 5,
-      "comment": "The temple jewelry collection is divine! Perfect for festivals and special occasions. Highly recommend Swarna Jewelry.",
+      "comment": "The temple jewelry collection is divine! Perfect for festivals and special occasions. Highly recommend Mangal Jewelers.",
       "location": "Ahmedabad, Gujarat",
       "verified": true
     }
@@ -777,7 +777,7 @@ function checkout() {
   
   const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
   
-  showNotification(`Order placed successfully! Total: ${formatPrice(total)}. Thank you for choosing Swarna Jewelry! 🎉`, 'success');
+  showNotification(`Order placed successfully! Total: ${formatPrice(total)}. Thank you for choosing Mangal Jewelers! 🎉`, 'success');
   
   cart = [];
   updateCartCount();
@@ -835,5 +835,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
   
-  console.log('Swarna Jewelry website initialized successfully! 🎉');
+  console.log('Mangal Jewelers website initialized successfully! 🎉');
 });
