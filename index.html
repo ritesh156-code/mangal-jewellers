@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mangal Jewelers - Traditional Craftsmanship, Timeless Beauty</title>
+    <meta name="description" content="Premium Indian jewelry store offering traditional gold necklaces, earrings, bangles, temple jewelry and bridal sets. 20+ years of authentic craftsmanship.">
+    <meta name="keywords" content="Indian jewelry, gold jewelry, traditional jewelry, bridal sets, temple jewelry, mangalsutra, jhumkas, gold bangles">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Mangal</h2>
+                <span>Jewelers</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#collections" class="nav-link">Collections</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#products" class="nav-link">Products</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search jewelry..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+                <button class="cart-btn" id="cartBtn">
+                    🛒 <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="wishlist-btn" id="wishlistBtn">
+                    ❤️ <span class="wishlist-count" id="wishlistCount">0</span>
+                </button>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>स्वर्ण SWARNA JEWELRY</h1>
+                <p class="hero-tagline">Traditional Craftsmanship, Timeless Beauty</p>
+                <p class="hero-description">Celebrating 50 years of authentic Indian jewelry with exquisite gold, silver, and precious stone creations that honor our rich cultural heritage.</p>
+                <button class="btn btn--primary hero-cta" onclick="scrollToSection('collections')">
+                    Explore Collections
+                </button>
+            </div>
+        </div>
+        <div class="hero-pattern"></div>
+    </section>
+
+    <!-- Gold Price Ticker -->
+    <div class="gold-ticker">
+        <div class="container">
+            <div class="ticker-content">
+                <span class="ticker-label">Today's Gold Rate:</span>
+                <span class="gold-price">22K: ₹5,450/g</span>
+                <span class="gold-price">18K: ₹4,400/g</span>
+                <span class="ticker-update">Last updated: Today, 10:30 AM</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Collections Section -->
+    <section id="collections" class="collections">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Traditional Collections</h2>
+                <p>Discover the finest selection of authentic Indian jewelry crafted with precision and love</p>
+            </div>
+            
+            <div class="collections-grid" id="collectionsGrid">
+                <!-- Collections will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Jewelry</h2>
+                <p>Handpicked pieces from our master craftsmen</p>
+            </div>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="necklaces">Necklaces</button>
+                <button class="filter-btn" data-category="earrings">Earrings</button>
+                <button class="filter-btn" data-category="bangles">Bangles</button>
+                <button class="filter-btn" data-category="bridal">Bridal</button>
+                <button class="filter-btn" data-category="temple">Temple</button>
+            </div>
+            
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Heritage of Excellence</h2>
+                    <p class="lead">Since 1975, Swarna Jewelry has been a trusted name in traditional Indian jewelry. Our master craftsmen create exquisite pieces using time-honored techniques, bringing you the finest collection of gold, silver, and precious stone jewelry that celebrates India's rich heritage.</p>
+                    
+                    <div class="heritage-stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Years of Excellence</p>
+                        </div>
+                        <div class="stat">
+                            <h3>12</h3>
+                            <p>Stores Across India</p>
+                        </div>
+                        <div class="stat">
+                            <h3>35</h3>
+                            <p>Master Craftsmen</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15</h3>
+                            <p>Awards Won</p>
+                        </div>
+                    </div>
+                    
+                    <div class="certifications">
+                        <h4>Our Certifications</h4>
+                        <div class="cert-badges">
+                            <span class="cert-badge">BIS Hallmark</span>
+                            <span class="cert-badge">ISO 9001:2015</span>
+                            <span class="cert-badge">Jewelers Association</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="services">
+                    <h3>Our Services</h3>
+                    <ul class="services-list">
+                        <li>Custom Jewelry Design</li>
+                        <li>Gold Exchange Program</li>
+                        <li>Jewelry Repair & Maintenance</li>
+                        <li>Free Home Delivery</li>
+                        <li>Certificate of Authenticity</li>
+                        <li>Lifetime Buyback Guarantee</li>
+                        <li>Festival Special Offers</li>
+                        <li>Gold Savings Scheme</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Trusted by families across India for generations</p>
+            </div>
+            
+            <div class="testimonials-grid" id="testimonialsGrid">
+                <!-- Testimonials will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Our Store</h2>
+                <p>Experience our jewelry collection in person</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>📍 Address</h4>
+                        <p>123 Jewelry Market, Gold Street<br>Mumbai - 400001, Maharashtra</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h4>📞 Phone</h4>
+                        <p>+91 98765 43210</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h4>📧 Email</h4>
+                        <p>info@swarnajewelry.com</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h4>🕒 Hours</h4>
+                        <p>Mon-Fri: 10:00 AM - 8:00 PM<br>Weekends: 10:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Get In Touch</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>Stay Updated with Festival Offers</h3>
+                <p>Subscribe to receive exclusive deals and new collection updates</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" class="newsletter-input" required>
+                    <button type="submit" class="btn btn--primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>स्वर्ण SWARNA</h3>
+                        <span>JEWELRY</span>
+                    </div>
+                    <p>Traditional Craftsmanship, Timeless Beauty</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" target="_blank">Facebook</a>
+                        <a href="#" class="social-link" target="_blank">Instagram</a>
+                        <a href="#" class="social-link" target="_blank">WhatsApp</a>
+                        <a href="#" class="social-link" target="_blank">YouTube</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Collections</h4>
+                    <ul>
+                        <li><a href="#">Gold Necklaces</a></li>
+                        <li><a href="#">Jhumkas & Earrings</a></li>
+                        <li><a href="#">Gold Bangles</a></li>
+                        <li><a href="#">Bridal Sets</a></li>
+                        <li><a href="#">Temple Jewelry</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Swarna Jewelry. All rights reserved. | Designed with ❤️ for Indian Heritage</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Shopping Cart</h3>
+                <button class="close-btn" onclick="closeModal('cartModal')">&times;</button>
+            </div>
+            <div class="modal-body" id="cartItems">
+                <!-- Cart items will be populated by JavaScript -->
+            </div>
+            <div class="modal-footer">
+                <div class="cart-total" id="cartTotal">Total: ₹0</div>
+                <button class="btn btn--primary" onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div id="quickViewModal" class="modal hidden">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3 id="quickViewTitle">Product Details</h3>
+                <button class="close-btn" onclick="closeModal('quickViewModal')">&times;</button>
+            </div>
+            <div class="modal-body" id="quickViewBody">
+                <!-- Product details will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
